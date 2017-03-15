@@ -3,12 +3,14 @@
 <head>
 <title>Note, 15 March, 2017</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     TeX: { equationNumbers: { autoNumber: "all" } }
   });
 </script>
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
 </head>
 <body>
 <p>Neven Sesardić, “From Bad Logic to Bad Philosophy: the Case of Alain Badiou,” <em>Rightly Considered</em>, (<a href="http://rightlyconsidered.org/2017/03/10/from-bad-logic-to-bad-philosophy-the-case-of-alain-badiou/">10 March, 2017</a>):</p>
@@ -37,12 +39,17 @@ Sb \rightarrow \neg Sa & & \text{(modus tollens)} \nonumber \\
 (\exists x)(Sx \rightarrow \neg Sa) & & \text{(existential introduction)} \nonumber
 \end{align}\]
 <p>Hence, \((\ref{ref1}) \leftrightarrow (\ref{ref2})\).  \(\blacksquare\)</p>
-<p><strong>Remark</strong>: Since \((\ref{ref1}) \leftrightarrow (\ref{ref2}) \leftrightarrow \neg \forall xSx\) (see Sesardić), we have \( \{\neg \forall xSx\} \vdash (\exists x)(Sx \rightarrow \neg Sa) \) in which the term \(a\) is not mentioned in the assumption. It can then be shown by universal introduction that \( \{\neg \forall xSx \} \vdash (\forall y)(\exists x)(Sx \rightarrow \neg Sy) \). Hence </p>
-\[\begin{aligned}\neg \forall xSx &\rightarrow (\forall y)(\exists x)(Sx \rightarrow \neg Sy)  & \text{(deduction theorem)}\\
-(\ref{ref1}) &\rightarrow \neg \forall xSx & \\ 
-(\ref{ref1}) &\rightarrow (\forall y)(\exists x)(Sx \rightarrow \neg Sy) & 
+<p><strong>Remark</strong>: More generally, we can derive from \(\{\neg \forall xSx\}\) that</p>
+\[\begin{aligned}
+\neg \forall xSx &\ \ \ \ & \text{(assumption)} \\
+\exists x \neg Sx & & \text{(negation of } \forall\text{)} \\
+\neg Sb & & \text{(existential elimination)} \\
+\neg Sb \rightarrow (\neg Pc \rightarrow \neg Sb) & & \text{(logical axiom)} \\
+\neg Pc \rightarrow \neg Sb & & \text{(modus ponens)} \\
+Sb \rightarrow Pc & & \text{(modus tollens)} \\
+(\exists x)(Sx \rightarrow Pc) & & \text{(existential introduction)} \\
+(\forall X \forall y )(\exists x)(Sx \rightarrow Xy) & & \text{(universal introduction)} \\
 \end{aligned}\]
-<p>On the other hand, \((\ref{ref1})\) is an instance of \((\forall y)(\exists x)(Sx \rightarrow \neg Sy) \), so \( (\forall y)(\exists x)(Sx \rightarrow \neg Sy) \rightarrow (\ref{ref1}) \), and therefore \( (\ref{ref1}) \leftrightarrow (\forall y)(\exists x)(Sx \rightarrow \neg Sy) \), which shows that the constant \(a\) is immaterial, contrary to Badiou's claim that ‘the predicate \(S\) is altogether particular, and is not replaceable by any predicate whatsoever, no more than is the individual constant \(a\)’.</p>
-
+<p>Since \((\ref{ref1}) \leftrightarrow (\ref{ref2}) \leftrightarrow \neg \forall xSx\) (see Sesardić), we have \((\ref{ref1}) \rightarrow (\forall X \forall y )(\exists x)(Sx \rightarrow Xy)\). On the other hand, \((\ref{ref1})\) is an instance of \((\forall X \forall y )(\exists x)(Sx \rightarrow Xy)\) with \(X=\neg S\) and \(y=a\), and therefore \( (\ref{ref1}) \leftrightarrow (\forall X \forall y)(\exists x)(Sx \rightarrow Xy) \), showing that the second \(S\) can be generalized, and the constant \(a\) is immaterial, contrary to Badiou’s claim that ‘the predicate \(S\) is altogether particular, and is not replaceable by any predicate whatsoever, no more than is the individual constant \(a\)’.</p>
 </body>
 </html>
