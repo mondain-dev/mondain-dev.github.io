@@ -8,7 +8,7 @@ function random_poem() {
   var begin      =[1, 1, 1, 1, 1, 1, 1]
   var end        = [883, 779, 176, 673, 430, 693, 390]
   var all_poems = [];
-  for (var i = 0; i <= anthologies.length; i++) {
+  for (var i = 0; i < anthologies.length; i++) {
     for (var j = begin[i]; j <= end[i]; j++){
       all_poems.push(anthologies[i].concat('/'.concat(j.toString())));
     }
