@@ -31,7 +31,7 @@ Let \(u\) denote the integrand, then \(x=\sech\exp u\)
         & = -2 \left.\frac{\partial}{\partial t}\right|_{t=1} \int_{-\infty}^\infty \frac{1}{t} \frac{\sinh(e^{v/t})}{\exp(2e^{v})+1}\diff v \\
         & = -2 \int_{-\infty}^\infty \left.\frac{\partial}{\partial t}\right|_{t=1} \frac{1}{t} \frac{\sinh(e^{v/t})}{\exp(2e^{v})+1}\diff v \\
         & = 2 \int_{-\infty}^\infty \frac{\sinh(e^{v})}{\exp(2e^{v})+1}\diff v + 2 \int_{-\infty}^\infty \frac{v e^v\cosh(e^{v})}{\exp(2e^{v})+1}\diff v \\
-        & = 2 \int_{-\infty}^\infty \frac{\sinh(e^{v})}{\exp(2e^{v})+1}\diff v + \int_{-\infty}^\infty v e^v \exp(e^{-v}) \diff v.
+        & = 2 \int_{-\infty}^\infty \frac{\sinh(e^{v})}{\exp(2e^{v})+1}\diff v + \int_{-\infty}^\infty v e^v \exp(-e^{v}) \diff v.
     \end{align} 
 \]
 </p>
@@ -55,7 +55,7 @@ Let \(u\) denote the integrand, then \(x=\sech\exp u\)
 and the second term <p>
     \[ 
         \begin{align}
-        \int_{-\infty}^\infty v e^v \exp(e^{-v}) \diff v = \int_{0}^\infty \ln z e^{-z} \diff z = -\gamma.
+        \int_{-\infty}^\infty v e^v \exp(-e^{v}) \diff v = \int_{0}^\infty \ln z e^{-z} \diff z = -\gamma.
         \end{align} 
     \]
 </p>
